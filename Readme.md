@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Маргарита Еремина](https://up.htmlacademy.ru/adaptive/19/user/407511).
-* Наставник: `Неизвестно`.
+* Наставник: Студент без наставника.
 
 ---
 
