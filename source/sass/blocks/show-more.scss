@@ -1,0 +1,26 @@
+.show-more {
+  padding: 27px 20px 25px;
+
+  border-top: 1px solid $card-border-gray;
+  border-bottom: 1px solid $card-border-gray;
+}
+
+.show-more__title {
+  margin-top: 54px;
+  margin-bottom: 9px;
+
+  font-size: $text-size-medium;
+  line-height: $line-height-large;
+  font-weight: 400;
+  color: $title-text-color;
+  text-transform: uppercase;
+}
+
+.show-more__message {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $additional-font;
+  font-size: $text-size-extra-small;
+  line-height: $line-height-small;
+}

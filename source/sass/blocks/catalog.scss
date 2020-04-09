@@ -1,0 +1,8 @@
+.catalog__wrapper {
+  margin-bottom: 28px;
+  padding: 24px 20px 0;
+}
+
+.catalog__list {
+  @include list-reset;
+}

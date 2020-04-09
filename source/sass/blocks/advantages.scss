@@ -1,0 +1,19 @@
+.advantages {
+  padding: 0 20px 42px 20px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+}
+
+.advantages__description {
+  margin: 0;
+
+  font-family: $additional-font;
+}

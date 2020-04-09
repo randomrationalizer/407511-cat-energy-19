@@ -1,0 +1,23 @@
+.card {
+  padding: 24px 0;
+  border-top: 1px solid $card-border-gray;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: $text-size-medium;
+  line-height: $line-height-large;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $title-text-color;
+}
+
+.card__image {
+  margin: 0;
+}
+
+.card__properties {
+  margin-bottom: 22px;
+}

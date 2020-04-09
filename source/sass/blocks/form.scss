@@ -1,0 +1,24 @@
+.form__fieldset {
+  margin: 0;
+  padding: 31px 20px 22px;
+
+  border: 0;
+  border-bottom: 1px solid $card-border-gray;
+}
+
+.form__field-group {
+  @include list-reset;
+}
+
+.form__legend {
+  margin-top: 31px;
+}
+
+.form__notice {
+  margin: 22px 0 34px;
+
+  font-family: $additional-font;
+  font-size: $text-size-small;
+  line-height: $line-height-small;
+  color: $main-text-color;
+}

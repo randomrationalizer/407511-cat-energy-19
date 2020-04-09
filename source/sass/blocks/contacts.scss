@@ -1,0 +1,19 @@
+.contacts__message {
+  margin: 0;
+
+  font-size: $text-size-medium;
+  line-height: $line-height-large;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.contacts__address {
+  margin: 0;
+
+  font-family: $additional-font;
+  line-height: $line-height-large;
+}
+
+.contacts__wrapper {
+  padding: 28px 20px 23px;
+}

@@ -1,0 +1,23 @@
+.input-text {
+  font-size: $text-size-medium;
+  line-height: $line-height-medium;
+  text-transform: uppercase;
+}
+
+.input-text__field {
+  font: inherit;
+  text-transform: uppercase;
+
+  border: 1px solid $border-light-gray;
+
+  &::placeholder {
+    color: $main-text-color;
+
+    opacity: 1;
+  }
+
+  &--textarea {
+    font-size: $text-size-medium;
+    line-height: $line-height-medium;
+  }
+}

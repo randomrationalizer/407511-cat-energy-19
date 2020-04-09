@@ -1,0 +1,21 @@
+.site-list {
+  @include list-reset;
+
+  font-size: $text-size-large;
+  line-height: $line-height-large;
+  font-weight: 500;
+  color: $title-text-color;
+  text-transform: uppercase;
+
+  border-top: 1px solid $main-menu-divide-line;
+}
+
+.site-list__link {
+  display: block;
+  margin: 0;
+  padding: 23px;
+
+  color: $title-text-color;
+
+  border-bottom: 1px solid $main-menu-divide-line;
+}

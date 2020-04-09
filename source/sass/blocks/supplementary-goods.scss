@@ -1,0 +1,18 @@
+.supplementary-goods__wrapper {
+  padding: 0 20px;
+}
+
+.supplementary-goods__title {
+  margin-bottom: 30px;
+}
+
+.supplementary-goods__list {
+  @include list-reset;
+  margin-bottom: 39px;
+
+  border-bottom: 1px solid $border-light-gray;
+}
+
+.supplementary-goods__gift {
+  margin-bottom: 35px;
+}
