@@ -17,6 +17,7 @@
 
 .programs__title {
   margin: 0;
+  margin-bottom: 34px;
 
   font-size: $text-size-extra-large;
   line-height: $line-height-xxxl;
@@ -26,7 +27,13 @@
 }
 
 .programs_description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+
   font-family: $additional-font;
+
+  border-bottom: 1px solid $divide-line-dark-gray;
 }
 
 .programs__link {
