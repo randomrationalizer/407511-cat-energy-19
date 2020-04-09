@@ -1,0 +1,10 @@
+.our-social {
+  padding: 22px 0 21px;
+
+  border-top: 1px solid $divide-line-dark-gray;
+  border-bottom: 1px solid $divide-line-dark-gray;
+}
+
+.our-social__list {
+  @include list-reset;
+}
