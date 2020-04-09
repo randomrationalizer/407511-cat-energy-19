@@ -1,0 +1,41 @@
+.product-case {
+  padding: 26px 20px 36px;
+
+  background-color: $bg-gray;
+}
+
+.product-case__description {
+  font-family: $additional-font;
+}
+
+.product-case__stats-value {
+  font-size: $text-size-extra-large;
+  line-height: $line-height-extra-large;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.product-case__stats-legend {
+  font-family: $additional-font;
+  font-size: $text-size-extra-small;
+  line-height: $line-height-xxs;
+}
+
+.product-case__total-cost {
+  font-size: $text-size-small;
+  line-height: $line-height-large;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.product-case__toggle {
+  font-size: $text-size-medium;
+  line-height: $line-height-large;
+  text-transform: uppercase;
+  color: $title-text-color;
+
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+}

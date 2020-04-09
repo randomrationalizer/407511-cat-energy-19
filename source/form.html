@@ -2,26 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет-магазин Кэт Энерджи</title>
-    <meta name="description" content="Интернет-магазин функционального питания для кошек Кэт Энерджи">
+    <meta name="description" content="Подбор программы питания в интернет-магазине функционального питания для кошек Кэт Энерджи">
+    <title>Подбор программы питания Кэт Энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Логотип Cat Energy">
+        <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a>Подбор программы</a>
+              <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -29,7 +30,7 @@
     </header>
 
     <main class="page-main">
-      <h1>Подбор программы</h1>
+      <h1 class="page-title">Подбор программы</h1>
       <section class="programm-selection">
         <h2 class="visually-hidden">Форма подбора программы питания</h2>
         <p class="programm-selection__hint">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -72,7 +73,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--owner-data">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <legend class="form__legend page-subtitle">Контактные данные (владельца кота)</legend>
             <ul class="form__field-group">
               <li class="form__field input-text input-text--email">
                 <label class="input-text__label" for="user-email">E-mail:*</label>
@@ -86,12 +87,12 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comments">
-            <legend class="form__legend">Комментарий</legend>
-            <textarea class="form__field input-text" name="comment" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
+            <legend class="form__legend page-subtitle">Комментарий</legend>
+            <textarea class="form__field input-text__field input-text__field--textarea" name="comment" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--additional-products">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend page-subtitle">Дополнительно</legend>
             <ul class="form__field-group">
               <li class="form__field input-checkbox">
                 <input class="visually-hidden input-checkbox__field" type="checkbox" id="sweetener" name="additional-product" value="sweetener" checked>
@@ -118,12 +119,14 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts contacts">
+        <div class="contacts__wrapper">
           <p class="contacts__message">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          <img class="contacts__map map" src="https://via.placeholder.com/320x400" width="320" height="400" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </div>
+        <img class="contacts__map map" src="https://via.placeholder.com/320x400" width="320" height="400" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </div>
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
         </a>
@@ -140,7 +143,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+        <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">

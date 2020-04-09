@@ -1,0 +1,35 @@
+.programs {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0 20px;
+}
+
+.programs__list {
+  @include list-reset;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+  padding: 22px 20px;
+
+  background-color: $bg-gray;
+}
+
+.programs__title {
+  margin: 0;
+
+  font-size: $text-size-extra-large;
+  line-height: $line-height-xxxl;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.programs_description {
+  font-family: $additional-font;
+}
+
+.programs__link {
+  text-transform: uppercase;
+  color: $title-text-color;
+}
