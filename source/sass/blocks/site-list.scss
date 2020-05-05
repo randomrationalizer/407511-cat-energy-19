@@ -1,11 +1,10 @@
 .site-list {
-  @include list-reset;
-
   font-size: $text-size-large;
   line-height: $line-height-large;
   font-weight: 500;
   color: $title-text-color;
   text-transform: uppercase;
+  text-align: center;
 
   border-top: 1px solid $main-menu-divide-line;
 }
@@ -18,4 +17,11 @@
   color: $title-text-color;
 
   border-bottom: 1px solid $main-menu-divide-line;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
 }

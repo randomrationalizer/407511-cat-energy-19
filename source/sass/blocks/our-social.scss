@@ -6,5 +6,17 @@
 }
 
 .our-social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .our-social {
+    padding: 0;
+
+    border: 0;
+  }
 }

@@ -40,3 +40,41 @@
   text-transform: uppercase;
   color: $title-text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 42px;
+    padding: 0 30px;
+  }
+
+  .programs__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-bottom: 68px;
+    padding: 0 40px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    padding: 41px 56px 62px 52px;
+  }
+
+  .programs__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}

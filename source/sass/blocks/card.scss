@@ -1,6 +1,14 @@
 .card {
-  padding: 24px 0;
-  border-top: 1px solid $card-border-gray;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__wrapper {
+  position: relative;
+
+  padding: 22px 0 0 140px;
 }
 
 .card__title {
@@ -15,9 +23,58 @@
 }
 
 .card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
   margin: 0;
 }
 
 .card__properties {
-  margin-bottom: 22px;
+  margin-bottom: 25px;
+}
+
+.card__order-button {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    padding: 82px 37px 40px;
+    align-items: stretch;
+
+    background-color: $bg-gray;
+  }
+
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+
+    background-color: $bg-gray;
+  }
+
+  .card__order-button {
+    width: auto;
+  }
+
+  .card__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__image {
+    position: static;
+
+    order: 1;
+
+    margin-top: -164px;
+    margin-bottom: 39px;
+  }
+
+  .card__title {
+    order: 2;
+  }
 }

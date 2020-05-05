@@ -22,3 +22,34 @@
   font-family: $additional-font;
   line-height: $line-height-extra-small;
 }
+
+.supplementary-card__order-button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .supplementary-card {
+    padding: 27px 40px;
+
+    border: 1px solid $border-light-gray;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .supplementary-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    padding: 15px 0;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .supplementary-card__order-button {
+    width: 245px;
+  }
+}

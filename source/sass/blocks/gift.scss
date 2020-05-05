@@ -1,10 +1,32 @@
+.gift {
+  display: block;
+  padding: 190px 60px 42px;
+
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .gift__message {
   margin: 0;
-  padding: 0 60px;
 
   font-family: $additional-font;
   font-size: $text-size-medium;
   line-height: $line-height-large;
   font-weight: 400;
   color: $contrast-text-color;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+  }
 }

@@ -1,19 +1,25 @@
 .promo {
   margin: 0;
-  margin-bottom: 22px;
 
-
+  text-align: center;
   color: $contrast-text-color;
 }
 
 .promo__wrapper {
-  padding: 28px 20px 167px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 22px;
 
-  background-color: $light-green;
+  background-color: $contrast-text-color;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover;
+  background-size: contain;
+}
+
+.promo__message {
+  order: 1;
 }
 
 .promo__title {
@@ -31,4 +37,92 @@
   font-size: $text-size-small;
   line-height: $line-height-extra-small;
   text-transform: uppercase;
+}
+
+.promo__product-photo {
+  order: 2;
+}
+
+.promo__button {
+  order: 3;
+
+  width: 280px;
+}
+
+@media (min-width: 430px) {
+  .promo__wrapper {
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    align-items: flex-start;
+
+    margin: 0 auto;
+    padding: 61px 30px 80px;
+
+    background: none;
+  }
+
+  .promo__message {
+    padding: 0 200px 0 90px;
+
+    text-align: left;
+    color: $title-text-color;
+  }
+
+  .promo__button {
+    order: 2;
+    z-index: 2;
+
+    width: 245px;
+    margin-left: 90px;
+  }
+
+  .promo__product-photo {
+    order: 3;
+    z-index: 1;
+
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
+    margin-top: -80px;
+  }
+
+  .promo__product-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin: 0 auto;
+
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 720px 626px;
+  }
+
+  .promo__wrapper {
+    width: $desktop-width;
+    padding: 142px 40px 55px;
+  }
+
+  .promo__message {
+    width: 420px;
+    margin: 0;
+    padding: 0 0 0 80px;
+  }
+
+  .promo__product-photo {
+    align-self: center;
+
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    margin-left: -45px;
+    margin-top: -142px;
+  }
 }
