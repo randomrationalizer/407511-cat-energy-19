@@ -1,0 +1,25 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 610px;
+  }
+}

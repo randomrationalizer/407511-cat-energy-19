@@ -1,7 +1,14 @@
 .product-case {
-  padding: 26px 20px 36px;
-
+  padding-top: 26px;
   background-color: $bg-gray;
+}
+
+.product-case__title {
+  margin: 0 20px 34px;
+}
+
+.product-case__wrapper {
+  padding: 0 20px 36px;
 }
 
 .product-case__description {
@@ -38,4 +45,38 @@
   background-color: transparent;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .product-case {
+    background-color: $main-bg;
+    border-top: 1px solid $main-menu-divide-line;
+  }
+
+  .product-case__wrapper {
+    padding: 40px 30px 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-case {
+    border-top: 0;
+  }
+
+  .product-case__wrapper {
+    width: $desktop-width;
+    padding: 40px 40px 67px;
+    margin: 0 auto;
+  }
+
+  .product-case__container {
+    background-color: $bg-gray;
+  }
+
+  .product-case__title {
+    width: $desktop-width;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

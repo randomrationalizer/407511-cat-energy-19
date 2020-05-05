@@ -1,5 +1,8 @@
 .show-more {
   padding: 27px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   border-top: 1px solid $card-border-gray;
   border-bottom: 1px solid $card-border-gray;
@@ -16,6 +19,10 @@
   text-transform: uppercase;
 }
 
+.show-more__button {
+  width: 280px;
+}
+
 .show-more__message {
   margin: 0;
   margin-bottom: 20px;
@@ -23,4 +30,23 @@
   font-family: $additional-font;
   font-size: $text-size-extra-small;
   line-height: $line-height-small;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding: 82px 37px 40px;
+    justify-content: flex-end;
+    text-align: center;
+
+    border: 1px solid $card-border-gray;
+  }
+
+  .show-more__button {
+    width: 100%;
+  }
+
+  .show-more__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
