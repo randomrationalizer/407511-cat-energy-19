@@ -17,10 +17,10 @@
 .contacts__wrapper {
   padding: 28px 20px 23px;
 
-  background-color: $main-bg;
+  background-color: $bg-gray;
 
-  &--inner-page {
-    background-color: $bg-gray;
+  &--index {
+    background-color: $main-bg;
   }
 }
 
@@ -32,7 +32,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding: 65px 30px 60px;
+    margin: 0 30px;
+    padding: 65px 40px 60px;
   }
 
   .contacts__map {
@@ -52,6 +53,8 @@
 
     width: 570px;
     padding: 62px 76px 58px;
+
+    background-color: $main-bg;
   }
 
   .contacts__map {
