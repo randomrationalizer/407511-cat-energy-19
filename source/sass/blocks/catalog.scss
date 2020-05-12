@@ -34,6 +34,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: $desktop-width;
+  }
+
   .catalog__item {
     width: 245px;
     margin: 82px 40px 58px;

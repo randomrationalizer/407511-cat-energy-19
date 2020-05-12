@@ -1,9 +1,13 @@
 .form__fieldset {
   margin: 0;
-  padding: 31px 20px 22px;
+  padding: 31px 0 22px;
 
   border: 0;
-  border-bottom: 1px solid $card-border-gray;
+
+  &--program-goal {
+    border-top: 1px solid $card-border-gray;
+    border-bottom: 1px solid $card-border-gray;
+  }
 }
 
 .form__field-group {
@@ -21,4 +25,17 @@
   font-size: $text-size-small;
   line-height: $line-height-small;
   color: $main-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form__submit-btn {
+    margin-right: 60px;
+  }
 }
